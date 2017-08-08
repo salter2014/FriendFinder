@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder Survey</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Friend Finder Survey</h1>
+      <h3>Find a friend!</h3>
+      <a href="/home"><button type="button" class="btn btn-success btn-lg"></span>Return Home</button></a>
+    </div>
+
+
+    <div class="row">
+
+      <div class="col-lg-12">
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Survey Questions</h3>
+          </div>
+          <div class="panel-body">
+            <div class="container">
+
+              <h3>Name</h3>
+              <input type="text" name="" id="name" class="form-control" required>
+
+              <h3>Question 1</h3>
+              <h4>I like sports.</h4>
+              <select data-placeholder="" class="chosen-select" id="q1">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+              <h3>Question 2</h3>
+              <h4>I like Cats.</h4>
+              <select data-placeholder="" class="chosen-select" id="q2">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+
+              <h3>Question 3</h3>
+              <h4>I like hiking.</h4>
+              <select data-placeholder="" class="chosen-select" id="q3">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+
+              <h3>Question 4</h3>
+              <h4>I like the outdoors.</h4>
+              <select data-placeholder="" class="chosen-select" id="q4">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+
+              <h3>Question 5</h3>
+              <h4>I like Game of Thrones.</h4>
+              <select data-placeholder="" class="chosen-select" id="q5">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+
+              <h3>Question 6</h3>
+              <h4>I like the color green.</h4>
+              <select data-placeholder="" class="chosen-select" id="q6">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+
+              <h3>Question 7</h3>
+              <h4>I like the beach.</h4>
+              <select data-placeholder="" class="chosen-select" id="q7">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+              <h3>Question 8</h3>
+              <h4>I like to read.</h4>
+              <select data-placeholder="" class="chosen-select" id="q8">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+              <h3>Question 9</h3>
+              <h4>I like to ride horses.</h4>
+              <select data-placeholder="" class="chosen-select" id="q9">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+              <h3>Question 10</h3>
+              <h4>I like tennis.</h4>
+              <select data-placeholder="" class="chosen-select" id="q10">
+	 		<option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+      	</select>
+
+              <br>
+              <br>
+
+              <button type="submit" class="btn btn-primary btn-lg" id="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <p><a href="/api/friends">Friend List JSON</a></p>
+        </div>
+      </footer>
+    </div>
+
+
+    <script type="text/javascript">
+      $("#submit").on("click", function (event) {
+        event.preventDefault();
+
+        var userData = {
+          name: $("#name").val(),
+          scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(),]
+        };
+
+        $.post("/api/friends", userData, function (data) {
+          alert("Your closest friend match is " + data.name);
+        });
+
+      });
+    </script>
+
+</body>
+
+</html>
